@@ -1,0 +1,12 @@
+#Create a program that allows the user to store and manage contacts in an address book
+address_book = {}
+n =int(input("Enter the number of contacts you want to add: "))
+
+
+while  len(address_book) < n:
+    name = input("Enter name: ")
+    address = input("Enter address: ")
+    phone_number = input("Enter phone number: ")
+    address_book[name] = [address, phone_number]
+    print("Address added successfully!")
+    print(address_book)
